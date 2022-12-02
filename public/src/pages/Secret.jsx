@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import {useCookies} from 'react-cookie';
 import axios from "axios";
 import {ToastContainer, Toast, toast} from 'react-toastify'
-import dbs3 from "../images/dbs3.png";
 
 export default function Secret() {
     const navigate = useNavigate();
@@ -30,11 +29,6 @@ export default function Secret() {
     }
   return (
     <div className='App'>
-        <header>
-            <div>
-                <img className='logo' src={dbs3} alt=""/>
-            </div>
-        </header>
         <div className='page'>
             <button className='logout' onClick={logOut}>Log Out</button>
         </div>
